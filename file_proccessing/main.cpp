@@ -22,6 +22,7 @@ int main() {
 
 	do
 	{
+		system("color A0");
 		system("cls");
 		cout << "\t >>> Welcome to you in our program >>>" << endl << endl;
 		taher:

@@ -20,7 +20,7 @@ void addRecord() {
 	if (file.is_open())
 	{
 		cout << "----------------------" << endl << endl;
-		cout << "Follow instructions blow...\n";
+		cout << "Follow instructions blew...\n";
 		cout << "--------------" << endl;
 		do {
 			
