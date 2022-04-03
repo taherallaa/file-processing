@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\updata_records">
+      <UniqueIdentifier>{accc8420-938b-40ea-a99c-f8d79cc5e067}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="employee_class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="add_record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="read_records.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="updata_name.h">
+      <Filter>Header Files\updata_records</Filter>
+    </ClInclude>
+    <ClInclude Include="updata_age.h">
+      <Filter>Header Files\updata_records</Filter>
+    </ClInclude>
+    <ClInclude Include="updata_salary.h">
+      <Filter>Header Files\updata_records</Filter>
+    </ClInclude>
+    <ClInclude Include="updata_each_records.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_length.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="search_record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="delete_record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_copy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="read_copy_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="global_var.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
