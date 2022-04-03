@@ -24,7 +24,7 @@ void updataSalary() {
 		while (!file.eof()) {
 			if (id == emp.id) 
 			{
-				cout << "\nEnter new salry:- " << endl;
+				cout << "\nEnter new salary:- " << endl;
 				cin >> emp.salary;
 
 				int tellg = file.tellg();

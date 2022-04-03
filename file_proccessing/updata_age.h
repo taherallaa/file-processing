@@ -23,8 +23,8 @@ void updataAge() {
 		while (!file.eof()) {
 			if (id == emp.id)
 			{
-				cout << "\nEnter new name:- " << endl;
-				cin >> emp.name;
+				cout << "\nEnter new age:- " << endl;
+				cin >> emp.age;
 
 				int tellg = file.tellg();
 				int sizeOf = sizeof(emp);

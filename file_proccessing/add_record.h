@@ -19,9 +19,11 @@ void addRecord() {
 	char letter;
 	if (file.is_open())
 	{
+		cout << "----------------------" << endl << endl;
 		cout << "Follow instructions blow...\n";
+		cout << "--------------" << endl;
 		do {
-			system("cls");
+			
 			cout << "Enter id:- " << endl;
 			cin >> emp.id;
 

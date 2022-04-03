@@ -25,7 +25,7 @@ int main() {
 		system("cls");
 		cout << "\t >>> Welcome to you in our program >>>" << endl << endl;
 		taher:
-		cout << "1-Add record.\t\t\t2-Read record.\n3-Search recrod.\t\t4-Updata record.\n5-Delete record.\t\t6-Copy file.\n7-Read copy file\nExit.";
+		cout << "1-Add record.\t\t\t2-Read record.\n3-Search recrod.\t\t4-Updata record.\n5-Delete record.\t\t6-Copy file.\n7-Read copy file\t\t8-Exit.";
 		cout << endl << endl << "Enter your choose:-  ";
 		cin >> choose;
 
@@ -58,7 +58,7 @@ int main() {
 			cout << "Invalid input" << endl;
 			goto taher;
 		}
-		
+		cout << endl << "---------------------- \n";
 		cout << "Do you want to do any proccessing on file(Y,N)?" << endl;
 		cin >> letter;
 	} while (letter == 'Y' || letter == 'y');

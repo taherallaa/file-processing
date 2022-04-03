@@ -16,11 +16,10 @@ void updataAnyRecord() {
 	char letter;
 	do {
 		int choose;
+		system("cls");
 
 		taher:
-
-		
-
+	
 		cout << "Choose any field that want to update it:- \n" << endl;
 		cout << "1-Updata name.\t\t2-Updata age.\n3-Updata salary.\t4-Exit.\n";
 		cout << endl << "Enter your choose:-  ";
@@ -38,7 +37,7 @@ void updataAnyRecord() {
 			updataSalary();
 			break;
 		case 4:
-			exit(0);
+			return;
 		default:
 		
 			cout << endl << endl << "Invalid choose try agein" << endl;
