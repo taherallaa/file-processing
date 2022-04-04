@@ -6,8 +6,10 @@
 #include <iostream>
 using namespace std;
 
+// global variable
 
-string namefile;
+ string namefile;
+ bool ch;
 
 
 #endif 

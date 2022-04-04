@@ -11,24 +11,44 @@ using namespace std;
 #include "delete_record.h"
 #include "file_copy.h"
 #include "read_copy_file.h"
-
+#include "global_var.h"
 
 
 int main() {
 
-
 	char letter;
 	int choose;
 
+
 	do
 	{
+		
+		// change background and font color  of the terminal.
 		system("color A0");
+
+		//to clear the screen.
 		system("cls");
-		cout << "\t >>> Welcome to you in our program >>>" << endl << endl;
-		taher:
-		cout << "1-Add record.\t\t\t2-Read record.\n3-Search recrod.\t\t4-Updata record.\n5-Delete record.\t\t6-Copy file.\n7-Read copy file\t\t8-Exit.";
+
+		//the first screen of the program
+		
+		if (!ch) 
+		{
+			cout << endl << endl << "\t\t\t___Press Enter to open the program___ " << endl;
+			_getch();
+		}
+
+		system("cls");
+		cout << "\t\a >>> Welcome to you in our program >>>" << endl << endl;
+		cout << "select your choose:- \n" << endl;
+	taher:
+		
+		cout << "1-Add record.\t\t\t2-Read record.\n3-Search recrod.\t\t"
+			    "4-Updata record.\n5-Delete record.\t\t6-Copy file.\n7-Read copy file.\t\t8-Exit.";
+
 		cout << endl << endl << "Enter your choose:-  ";
 		cin >> choose;
+		//make sound
+		cout << "\a";
 
 		switch (choose)
 		{
@@ -56,12 +76,15 @@ int main() {
 		case 8:
 			exit(0);
 		default:
-			cout << "Invalid input" << endl;
+			system("cls");
+			cout << "\n\nInvalid input, Choose another choose." << endl;
+			cout << "----------------------" << endl;
 			goto taher;
 		}
 		cout << endl << "---------------------- \n";
 		cout << "Do you want to do any proccessing on file(Y,N)?" << endl;
 		cin >> letter;
+		ch = true;
 	} while (letter == 'Y' || letter == 'y');
 
 	return 0;
