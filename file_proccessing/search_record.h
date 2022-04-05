@@ -37,6 +37,7 @@ void searchAboutRecord() {
 		}
 		if (id != emp.id)
 			cout << "Invalid id \n";
+
 		file.close();
 	}
 	else {

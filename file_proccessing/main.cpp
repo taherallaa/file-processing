@@ -83,7 +83,7 @@ int main() {
 			goto taher;
 		}
 		cout << endl << "---------------------- \n";
-		cout << "Do you want to do any proccessing on file(Y,N)?" << endl;
+		cout << "Do you want to do any proccessing on file(Y,N)? ";
 		cin >> letter;
 		ch = true;
 	} while (letter == 'Y' || letter == 'y');
