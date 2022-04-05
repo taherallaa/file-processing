@@ -16,6 +16,9 @@ using namespace std;
 
 int main() {
 
+
+	deleatAllRecord();
+/*
 	char letter;
 	int choose;
 
@@ -88,4 +91,5 @@ int main() {
 	} while (letter == 'Y' || letter == 'y');
 
 	return 0;
+*/
 }

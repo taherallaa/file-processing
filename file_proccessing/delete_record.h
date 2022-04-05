@@ -6,12 +6,65 @@
 
 //add header file
 #include "employee_class.h"
+#include "delete_choose_records.h"
+#include "delete_all_records.h"
 
 
 using namespace std;
 
 
 void deleteRecord() {
+
+	char letter;
+	do {
+		int choose;
+		system("cls");
+
+	taher:
+
+		cout << "Choose any field that want to update it:- \n" << endl;
+		cout << "1-Delete all record.\n2-Delete selected record.\n3-Exit.\n";
+		cout << endl << "Enter your choose:-  ";
+		cin >> choose;
+
+		switch (choose)
+		{
+		case 1:
+			deleatAllRecord();
+			break;
+		case 2:
+			delChooseRecrd();
+			break;
+		case 3:
+			return;
+		default:
+
+			cout << endl << endl << "Invalid choose try agein" << endl;
+			cout << "-----------------------\n";
+
+			goto taher;
+			break;
+		}
+
+		cout << endl << "Do you want to delete anything else(Y,N)?   ";
+		cin >> letter;
+
+		cout << endl << "----------------------" << endl;
+
+	} while (letter == 'y' || letter == 'Y');
+
+
+
+
+
+
+
+
+
+
+
+
+	/*
 	int id;
 	bool found;
 	Employee emp;
@@ -46,6 +99,7 @@ void deleteRecord() {
 		remove("data.txt");
 		rename("temp.txt", "data.txt");
 	}
+	*/
 }
 
 #endif

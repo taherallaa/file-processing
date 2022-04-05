@@ -16,6 +16,9 @@
     <Filter Include="Header Files\updata_records">
       <UniqueIdentifier>{accc8420-938b-40ea-a99c-f8d79cc5e067}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\records_delete">
+      <UniqueIdentifier>{c12d414b-f8e9-4998-b6df-9875a1016be4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -61,6 +64,12 @@
     </ClInclude>
     <ClInclude Include="global_var.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="delete_all_records.h">
+      <Filter>Header Files\records_delete</Filter>
+    </ClInclude>
+    <ClInclude Include="delete_choose_records.h">
+      <Filter>Header Files\records_delete</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
