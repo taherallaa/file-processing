@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 using namespace std;
 
 //add header file..
@@ -16,9 +17,6 @@ using namespace std;
 
 int main() {
 
-
-	deleatAllRecord();
-/*
 	char letter;
 	int choose;
 
@@ -91,5 +89,4 @@ int main() {
 	} while (letter == 'Y' || letter == 'y');
 
 	return 0;
-*/
 }
