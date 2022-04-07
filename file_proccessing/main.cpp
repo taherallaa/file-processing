@@ -18,7 +18,7 @@ using namespace std;
 int main() {
 
 	char letter;
-	int choose;
+	int choose{0};
 
 
 	do
