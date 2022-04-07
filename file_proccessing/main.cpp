@@ -34,13 +34,13 @@ int main() {
 		
 		if (!ch) 
 		{
-			cout << endl << endl << "\t\t\t___Press Enter to open the program___ " << endl;
+			cout << endl << endl << "\t\t\t___ Welcome to you in our program, Press 'Enter' to continue___ " << endl;
 			_getch();
 		}
 
 		system("cls");
-		cout << "\t\a >>> Welcome to you in our program >>>" << endl << endl;
-		cout << "select your choose:- \n" << endl;
+		cout << "\t\a >>> All Operation on file >>>" << endl << endl;
+		cout << "select your choose\n" << "-------" << endl;
 	taher:
 		
 		cout << "1-Add record.\t\t\t2-Read record.\n3-Search recrod.\t\t"
