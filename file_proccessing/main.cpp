@@ -78,8 +78,9 @@ int main() {
 			exit(0);
 		default:
 			system("cls");
-			cout << "\n\nInvalid input, Choose another choose." << endl;
-			cout << "----------------------" << endl;
+			cout << "\n\nInvalid input, Press enter to choose again." << endl;
+			_getch();
+			system("cls");
 			goto taher;
 		}
 		cout << endl << "---------------------- \n";
