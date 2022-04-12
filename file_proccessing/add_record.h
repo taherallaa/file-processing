@@ -23,7 +23,7 @@ void addRecord() {
 		cout << "Follow instructions blew...\n";
 		cout << "--------------" << endl;
 		do {
-			
+			system("cls");
 			cout << "Enter id:- " << endl;
 			cin >> emp.id;
 

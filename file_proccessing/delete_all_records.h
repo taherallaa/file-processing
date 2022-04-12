@@ -12,8 +12,17 @@ using namespace std;
 
 
 void deleatAllRecord() {
-	cout << endl << "This feature will coming soon" << endl;
+	ofstream file("data.txt", ios::out);
+	if (file.is_open())
+	{
+		file.clear();
+		file.close();
+	}
+	else {
+		cout << "the file doesn't found" << endl;
+	}
 }
+
 
 #endif
 
