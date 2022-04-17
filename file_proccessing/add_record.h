@@ -8,13 +8,15 @@
 #include "employee_class.h"
 
 
-using namespace std;
+using namespace std; 
 
 
 void addRecord() {
 	Employee emp;
+	int check_id;
 
 	ofstream file("data.txt", ios::out | ios::app);
+	ifstream readFile("data.txt", ios::in);
 
 	char letter;
 	if (file.is_open())
@@ -23,8 +25,10 @@ void addRecord() {
 		cout << "Follow instructions blew...\n";
 		cout << "--------------" << endl;
 		do {
+
 			system("cls");
-			cout << "Enter id:- " << endl;
+
+			cout << "Enter id" << endl;
 			cin >> emp.id;
 
 			cout << "Enter name:- " << endl;

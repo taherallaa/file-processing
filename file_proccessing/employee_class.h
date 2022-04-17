@@ -5,7 +5,8 @@
 
 class Employee {
 public:
-	int id, age;
+	int id;
+	int age;
 	float salary;
 	char name[10];
 };
