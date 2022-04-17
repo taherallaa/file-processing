@@ -18,7 +18,7 @@ void searchAboutRecord() {
 
 
 	if (file.is_open()) {
-
+		system("cls");
 		file.read((char*)&emp, sizeof(emp));
 
 		cout << "Enter id of the record you search about it:-   ";
