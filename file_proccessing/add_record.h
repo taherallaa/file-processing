@@ -12,13 +12,14 @@ using namespace std;
 
 
 void addRecord() {
+	//variable decleration
+	char letter;
 	Employee emp;
-	int check_id;
+	int check__id{};
 
 	ofstream file("data.txt", ios::out | ios::app);
 	ifstream readFile("data.txt", ios::in);
 
-	char letter;
 	if (file.is_open())
 	{
 		cout << "----------------------" << endl << endl;
@@ -28,8 +29,26 @@ void addRecord() {
 
 			system("cls");
 
+		again:
+
 			cout << "Enter id" << endl;
-			cin >> emp.id;
+			cin >> check__id;
+
+			readFile.read((char *) &emp, sizeof(emp));
+
+			// this do while blew for check if id is exist in file or not...
+			do {
+
+				if (check__id != emp.id) {
+					emp.id = check__id;
+					break;
+				}
+				else {
+					cout << "the id ( " << check__id << " ) is exist, try again!" << endl;
+					goto again;
+				} 
+				readFile.read((char*)&emp, sizeof(emp));
+			} while (!file.eof());
 
 			cout << "Enter name:- " << endl;
 			cin >> emp.name;
@@ -54,7 +73,5 @@ void addRecord() {
 		cout << "The file doesn't found \n";
 	}
 }
-
-
 
 #endif

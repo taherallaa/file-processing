@@ -27,10 +27,10 @@ void updataSalary() {
 				cout << "\nEnter new salary:- " << endl;
 				cin >> emp.salary;
 
-				int tellg = file.tellg();
-				int sizeOf = sizeof(emp);
+				int tell__num = file.tellg();
+				int sizeOf__num = sizeof(emp);
 
-				file.seekg(tellg - sizeOf, ios::beg);
+				file.seekg(tell__num - sizeOf__num, ios::beg);
 
 				file.write((char *) &emp, sizeof(emp));
 

@@ -10,7 +10,7 @@ using namespace std;
 
 void copyfile()
 {
-	char ch, letter;
+	char ch, letter = 0;
 	string copyfile;
 
 	do {

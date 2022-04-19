@@ -26,10 +26,10 @@ void updataAge() {
 				cout << "\nEnter new age:- " << endl;
 				cin >> emp.age;
 
-				int tellg = file.tellg();
-				int sizeOf = sizeof(emp);
+				int tell__num = file.tellg();
+				int sizeof__num = sizeof(emp);
 
-				file.seekg(tellg - sizeOf, ios::beg);
+				file.seekg(tell__num - sizeof__num, ios::beg);
 
 				file.write((char*)&emp, sizeof(emp));
 

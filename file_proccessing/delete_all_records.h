@@ -12,7 +12,9 @@ using namespace std;
 
 
 void deleatAllRecord() {
+
 	ofstream file("data.txt", ios::out);
+
 	if (file.is_open())
 	{
 		file.clear();
