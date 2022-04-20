@@ -9,8 +9,10 @@
 
 using namespace std;
 
+//this function blew in order ot read record that added
 void readRecord() {
 	system("cls");
+
 	Employee emp;
 	ifstream file;
 
@@ -22,6 +24,8 @@ void readRecord() {
 
 		cout << "The records are:- \n-----------" << endl;
 		cout << "Id\tName\tAge\tSalary" << endl;
+		
+		//the while blew in order to check the place of the cursor  and read the content file                                                                
 		while (!file.eof()) {
 			cout << emp.id << "\t" << emp.name << "\t" << emp.age << "\t" << emp.salary << endl;
 			file.read((char*)&emp, sizeof(emp));

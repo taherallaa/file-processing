@@ -12,15 +12,17 @@
 
 using namespace std;
 
-
+//this function for enable user delete all file or (specific/define) field
 void deleteRecord() {
 
-	char letter;
+	char letter{};
+
 	do {
 		int choose;
+
 		system("cls");
 
-	taher:
+	delte_again:
 
 		cout << "Choose any field that want to update it:- \n" << endl;
 		cout << "1-Delete all record.\n2-Delete selected record.\n3-Exit.\n";
@@ -39,10 +41,10 @@ void deleteRecord() {
 			return;
 		default:
 
-			cout << endl << endl << "Invalid choose try agein" << endl;
+			cout << endl << "\nInvalid choose try agein" << endl;
 			cout << "-----------------------\n";
 
-			goto taher;
+			goto delte_again;
 			break;
 		}
 

@@ -8,17 +8,19 @@
 
 using namespace std;
 
+//this function enable user to copy any file and add the path you want...
+//and we use global variable for pass the new copied_file in the function to read it...
 void copyfile()
 {
-	char ch, letter = 0;
+	char ch{}, letter{};
 	string copyfile;
 
 	do {
 		cout << "Enter the name of the file that want to copy it: " << endl;
-		cin >> copyfile;
+		cin >> copyfile;   //this variable place in globle file
 
 		cout << "Enter the path of the file and its name: " << endl;
-		cin >> namefile;
+		cin >> namefile;  //this variable place in globle file
 
 		ifstream infile(copyfile, ios::in);
 		ofstream outfile(namefile, ios::out);

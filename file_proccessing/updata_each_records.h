@@ -11,6 +11,7 @@
 
 using namespace std;
 
+//this function for enable user updata the field of record (name, age, salary)
 void updataAnyRecord() {
 	
 	char letter;

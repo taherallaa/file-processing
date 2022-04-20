@@ -9,7 +9,7 @@ using namespace std;
 // global variable
 
  string namefile;
- bool ch;
+ bool ch{};
 
 
 #endif 

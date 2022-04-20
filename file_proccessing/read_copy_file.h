@@ -10,8 +10,11 @@
 
 using namespace std;
 
+//this function for copy file that we create  in the function copyFile
 void readCopyFile() {
+
 	system("cls");
+
 	Employee emp;
 	ifstream file;
 
@@ -35,4 +38,4 @@ void readCopyFile() {
 }
 
 
-#endif // !_READ_COPY_FILE_H_
+#endif // _READ_COPY_FILE_H_

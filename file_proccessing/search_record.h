@@ -11,14 +11,18 @@
 
 using namespace std;
 
+//this function enable user to search about records and print the record on console..
 void searchAboutRecord() {
+
+	int id{};
 	Employee emp;
 	ifstream file("data.txt", ios::in);
-	int id;
 
 
 	if (file.is_open()) {
+
 		system("cls");
+
 		file.read((char*)&emp, sizeof(emp));
 
 		cout << "Enter id of the record you search about it:-   ";
