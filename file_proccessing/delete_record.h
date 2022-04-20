@@ -51,7 +51,6 @@ void deleteRecord() {
 		cout << endl << "Do you want to delete anything else(Y,N)?   ";
 		cin >> letter;
 
-		cout << endl << "----------------------" << endl;
 
 	} while (letter == 'y' || letter == 'Y');
 

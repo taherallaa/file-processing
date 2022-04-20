@@ -48,10 +48,12 @@ void updataAnyRecord() {
 			break;
 		}
 
+		cout << endl << "----------------------" << endl;
+
 		cout << endl << "Do you want to updata anything else(Y,N)?   ";
 		cin >> letter;
 
-		cout << endl << "----------------------" << endl;
+		
 
 	} while (letter == 'y' || letter == 'Y');
 }
