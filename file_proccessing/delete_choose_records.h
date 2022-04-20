@@ -11,7 +11,7 @@
 using namespace std;
 
 
-
+//this function for delete define record that user input...
 void delChooseRecrd() {
 
 	int id;

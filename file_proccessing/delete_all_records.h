@@ -10,7 +10,7 @@ using namespace std;
 
 
 
-
+//this function for delete all content of the file...
 void deleatAllRecord() {
 
 	ofstream file("data.txt", ios::out);
