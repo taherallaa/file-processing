@@ -38,11 +38,11 @@ void addRecord() {
 		again:
 
 			cout << "Enter id" << endl;
-			cin >> check__id;
+			cin >> check__id;  // id== 1
 
 			//this line blew will read the file first before we go to do do while
 			//to enable us check emp.id
-			readFile.read((char *) &emp, sizeof(emp));
+			readFile.read((char *) &emp, sizeof(emp)); // when function read file id == 1
 
 			// this do while blew in order to check if id is exist in file or not...
 			do {

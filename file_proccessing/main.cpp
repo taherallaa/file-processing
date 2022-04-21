@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <conio.h>
 
 
@@ -26,7 +26,7 @@ int main() {
 	{
 		
 		// change background and font color  of the terminal background will be green(2) and textColor will be black(0)
-		system("color 20");
+		system("color 60");
 
 		//to clear the screen of the console.
 		system("cls");
@@ -34,20 +34,24 @@ int main() {
 		//this condetion depend on the value of ch in the line 91 
 		if (!ch) 
 		{
-			cout << endl << endl << "\t\t\t___ Welcome to you in our program, Press 'Enter' to continue___ " << endl;
+			cout << "\n\n\n\n\t\t\tWelcome to you in our payroll program made by "; 
+
+			printf("%c", '\0' + 3);	printf("%c", '\0' + 3);	// for make emoji
+
+			cout <<" <<taher allaa >> && << salah swidan >> \n\n\t\t\t\t\t\t Press 'Enter' to continue" << endl;
 			_getch();
 		}
 
 		system("cls");
 		cout << "\t\a >>> All Operation on file >>>" << endl << endl;
-		cout << "select your choose\n" << "-------" << endl;
+		cout << "select your choose\n" << "-------\n" << endl;
 
 	//thid blew word (taher) for goto in line_86 if the user input choose number it will make user to enter number agein
 	taher:
 		
 		//the list blew is a order that user will choose from it
-		cout << "1-Add record.\t\t\t2-Read record.\n3-Search recrod.\t\t"
-			    "4-Updata record.\n5-Delete record.\t\t6-Copy file.\n7-Read copy file.\t\t8-Exit.";
+		cout << " 1-Add employee.\t\t\t2-Read file.\n 3-Search about employee.\t\t"
+			    "4-Updata employee filed.\n 5-Delete record.\t\t\t6-Copy file.\n 7-Read copy file.\t\t\t8-Exit.";
 
 		cout << endl << endl << "Enter your choose:-  ";
 		cin >> choose;

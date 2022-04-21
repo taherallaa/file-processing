@@ -22,7 +22,7 @@ void deleteRecord() {
 
 		system("cls");
 
-	delte_again:
+	delete_again:
 
 		cout << "Choose any field that want to update it:- \n" << endl;
 		cout << "1-Delete all record.\n2-Delete selected record.\n3-Exit.\n";
@@ -44,7 +44,7 @@ void deleteRecord() {
 			cout << endl << "\nInvalid choose try agein" << endl;
 			cout << "-----------------------\n";
 
-			goto delte_again;
+			goto delete_again;
 			break;
 		}
 

@@ -13,12 +13,24 @@ using namespace std;
 //this function for delete all content of the file...
 void deleatAllRecord() {
 
-	ofstream file("data.txt", ios::out);
+	
+	fstream file("data.txt", ios::in);
 
-	if (file.is_open())
-	{
-		file.clear();
-		file.close();
+	if (file.is_open()) {
+
+		char letter;
+
+		cout << "------" << endl << "Are you sure(Y,N)?  ";
+		cin >> letter;
+
+		if (letter == 'Y' || letter == 'y') {
+			ofstream infile("data.txt", ios::out);
+			cout << "file deleted";
+		}
+		else {
+			cout << "file doesn't delete";
+		}
+			
 	}
 	else {
 		cout << "the file doesn't found" << endl;
