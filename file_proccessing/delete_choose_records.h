@@ -39,7 +39,7 @@ if (file.is_open()) {
 		file.read((char*)&emp, sizeof(emp));
 	}
 	if (!found)
-		cout << "Invaild id" << endl;
+		cout << "Invaild id" << '\n';
 
 
 	file.close();

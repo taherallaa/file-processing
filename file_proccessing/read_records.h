@@ -22,18 +22,19 @@ void readRecord() {
 	{
 		file.read((char*)&emp, sizeof(emp));
 
-		cout << "The records are:- \n-----------" << endl;
+		cout << "The records are:- \n-----------" << '\n';
 		cout << "Id\tName\tAge\tSalary" << endl;
 		
 		//the while blew in order to check the place of the cursor  and read the content file                                                                
 		while (!file.eof()) {
-			cout << emp.id << "\t" << emp.name << "\t" << emp.age << "\t" << emp.salary << endl;
+
+			cout << emp.id << "\t" << emp.name << "\t" << emp.age << "\t" << emp.salary << '\n';
 			file.read((char*)&emp, sizeof(emp));
 		}
 		file.close();
 	}
 	else {
-		cout << "The file doesn't found" << endl;
+		cout << "The file doesn't found" << '\n';
 	}
 }
 

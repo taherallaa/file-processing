@@ -26,14 +26,17 @@ void readCopyFile() {
 
 		cout << "The records are:- \n-----------" << endl;
 		cout << "Id\tName\tAge\tSalary" << endl;
+
 		while (!file.eof()) {
-			cout << emp.id << "\t" << emp.name << "\t" << emp.age << "\t" << emp.salary << endl;
+
+			cout << emp.id << "\t" << emp.name << "\t" << emp.age << "\t" << emp.salary << '\n';
 			file.read((char*)&emp, sizeof(emp));
+
 		}
 		file.close();
 	}
 	else {
-		cout << "The file doesn't found" << endl;
+		cout << "The file doesn't found" << '\n';
 	}
 }
 

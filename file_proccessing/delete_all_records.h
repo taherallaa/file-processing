@@ -20,7 +20,7 @@ void deleatAllRecord() {
 
 		char letter;
 
-		cout << "------" << endl << "Are you sure(Y,N)?  ";
+		cout << "------" << '\n' << "Are you sure(Y,N)?  ";
 		cin >> letter;
 
 		if (letter == 'Y' || letter == 'y') {
@@ -33,7 +33,7 @@ void deleatAllRecord() {
 			
 	}
 	else {
-		cout << "the file doesn't found" << endl;
+		cout << "the file doesn't found" << '\n';
 	}
 }
 

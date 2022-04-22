@@ -16,10 +16,10 @@ void copyfile()
 	string copyfile;
 
 	do {
-		cout << "Enter the name of the file that want to copy it: " << endl;
+		cout << "Enter the name of the file that want to copy it: " << '\n';
 		cin >> copyfile;   //this variable place in globle file
 
-		cout << "Enter the path of the file and its name: " << endl;
+		cout << "Enter the path of the file and its name: " << '\n';
 		cin >> namefile;  //this variable place in globle file
 
 		ifstream infile(copyfile, ios::in);

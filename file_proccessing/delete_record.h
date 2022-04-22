@@ -24,9 +24,9 @@ void deleteRecord() {
 
 	delete_again:
 
-		cout << "Choose any field that want to update it:- \n" << endl;
+		cout << "Choose any field that want to update it:- \n" << '\n';
 		cout << "1-Delete all record.\n2-Delete selected record.\n3-Exit.\n";
-		cout << endl << "Enter your choose:-  ";
+		cout << '\n' << "Enter your choose:-  ";
 		cin >> choose;
 
 		switch (choose)
@@ -41,14 +41,14 @@ void deleteRecord() {
 			return;
 		default:
 
-			cout << endl << "\nInvalid choose try agein" << endl;
+			cout << '\n' << "\nInvalid choose try agein" << '\n';
 			cout << "-----------------------\n";
 
 			goto delete_again;
 			break;
 		}
 
-		cout << endl << "Do you want to delete anything else(Y,N)?   ";
+		cout << '\n' << "Do you want to delete anything else(Y,N)?   ";
 		cin >> letter;
 
 

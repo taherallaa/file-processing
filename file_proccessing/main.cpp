@@ -38,22 +38,28 @@ int main() {
 
 			printf("%c", '\0' + 3);	printf("%c", '\0' + 3);	// for make emoji
 
-			cout <<" <<taher allaa >> && << salah swidan >> \n\n\t\t\t\t\t\t Press 'Enter' to continue" << endl;
+			cout <<" <<taher allaa >> && << salah swidan >> \n\n\t\t\t\t\t\t Press 'Enter' to continue" << '\n';
 			_getch();
 		}
 
 		system("cls");
-		cout << "\t\a >>> All Operation on file >>>" << endl << endl;
-		cout << "select your choose\n" << "-------\n" << endl;
+		cout << "\t\a >>> All Operation on file >>>" << '\n' << '\n';
+		cout << "select your choose\n" << "-------\n" << '\n';
 
 	//thid blew word (taher) for goto in line_86 if the user input choose number it will make user to enter number agein
 	taher:
 		
 		//the list blew is a order that user will choose from it
-		cout << " 1-Add employee.\t\t\t2-Read file.\n 3-Search about employee.\t\t"
-			    "4-Updata employee filed.\n 5-Delete record.\t\t\t6-Copy file.\n 7-Read copy file.\t\t\t8-Exit.";
+		cout << " 1-Add employee."
+			<< "\t\t\t2-show payroll."
+			<< "\n 3-Search about employee."
+			<< "\t\t4-Updata employee filed." 
+			<< "\n 5-Delete employee." 
+			<< "\t\t\t6-back up file." 
+			<< "\n 7-show back up file."
+			<<"\t\t\t8-Exit.";
 
-		cout << endl << endl << "Enter your choose:-  ";
+		cout << '\n' << '\n' << "Enter your choose:-  ";
 		cin >> choose;
 
 		//the \a blew to make sound when user input his choose
@@ -87,12 +93,12 @@ int main() {
 			exit(0);
 		default:
 			system("cls");
-			cout << "\n\nInvalid input, Press enter to choose again." << endl;
+			cout << "\n\nInvalid input, Press enter to choose again." << '\n';
 			_getch();
 			system("cls");
 			goto taher;
 		}
-		cout << endl << "---------------------- \n";
+		cout << '\n' << "---------------------- \n";
 
 		cout << "Do you want to do any proccessing on file(Y,N)? ";
 		cin >> letter;

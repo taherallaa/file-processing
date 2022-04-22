@@ -21,9 +21,9 @@ void updataAnyRecord() {
 
 		taher:
 	
-		cout << "Choose any field that want to update it:- \n" << endl;
+		cout << "Choose any field that want to update it:- \n" << '\n';
 		cout << "1-Updata name.\t\t2-Updata age.\n3-Updata salary.\t4-Exit.\n";
-		cout << endl << "Enter your choose:-  ";
+		cout << '\n' << "Enter your choose:-  ";
 		cin >> choose;
 
 		switch (choose)
@@ -41,16 +41,16 @@ void updataAnyRecord() {
 			return;
 		default:
 		
-			cout << endl << endl << "Invalid choose try agein" << endl;
+			cout << '\n' << '\n' << "Invalid choose try agein" << '\n';
 			cout << "-----------------------\n";
 			
 			goto taher;
 			break;
 		}
 
-		cout << endl << "----------------------" << endl;
+		cout << '\n' << "----------------------" << '\n';
 
-		cout << endl << "Do you want to updata anything else(Y,N)?   ";
+		cout << '\n' << "Do you want to updata anything else(Y,N)?   ";
 		cin >> letter;
 
 		

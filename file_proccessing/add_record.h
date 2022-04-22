@@ -26,9 +26,9 @@ void addRecord() {
 
 	if (file.is_open())
 	{
-		cout << "----------------------------------" << endl;
+		cout << "----------------------------------" << '\n';
 		cout << "===> Follow instructions blew?! <===\n";
-		cout << "----------------------------------" << endl;
+		cout << "----------------------------------" << '\n';
 		do {
 			//this condition in order to  don't delete above statment in first time and the value will chage in 
 			//the line_74
@@ -37,7 +37,7 @@ void addRecord() {
 
 		again:
 
-			cout << "Enter id" << endl;
+			cout << "Enter id" << '\n';
 			cin >> check__id;  // id== 1
 
 			//this line blew will read the file first before we go to do do while
@@ -52,26 +52,26 @@ void addRecord() {
 					break;
 				}
 				else {
-					cout << "the id ( " << check__id << " ) is exist, try again!" << endl;
+					cout << "the id ( " << check__id << " ) is exist, try again!" << '\n';
 					goto again;
 				} 
 				readFile.read((char*)&emp, sizeof(emp));
 			} while (!file.eof());
 
-			cout << "Enter name:- " << endl;
+			cout << "Enter name:- " << '\n';
 			cin >> emp.name;
 
-			cout << "Enter age:- " << endl;
+			cout << "Enter age:- " << '\n';
 			cin >> emp.age;
 
-			cout << "Enter salary:- " << endl;
+			cout << "Enter salary:- " << '\n';
 			cin >> emp.salary;
 
 			//thie line blew in order ot write  record file 
 			file.write((char*)&emp, sizeof(emp));
 			
-			cout << endl << "-------------------" << endl;
-			cout << "Do you want to add new record(Y,N)?" << endl;
+			cout << '\n' << "-------------------" << '\n';
+			cout << "Do you want to add new record(Y,N)?  ";
 			cin >> letter;
 
 			ch = true;		//this variable use in the if statment in the line__34
