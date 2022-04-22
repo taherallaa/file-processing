@@ -7,7 +7,7 @@ class Employee {
 public:
 	int id;
 	int age;
-	float salary;
+	long float salary;
 	char name[10];
 };
 
