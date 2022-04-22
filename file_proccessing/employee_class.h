@@ -5,10 +5,9 @@
 
 class Employee {
 public:
-	int id;
-	int age;
-	long float salary;
-	char name[10];
+	int id{}, age{};
+	long float salary{};
+	char name[10]{};
 };
 
 #endif
