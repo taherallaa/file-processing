@@ -50,13 +50,13 @@ int main() {
 	taher:
 		
 		//the list blew is a order that user will choose from it
-		cout << " 1-Add employee."
-			<< "\t\t\t2-show payroll."
-			<< "\n 3-Search about employee."
-			<< "\t\t4-Updata employee filed." 
-			<< "\n 5-Delete employee." 
-			<< "\t\t\t6-back up file." 
-			<< "\n 7-show back up file."
+		cout << " 1-Add Employee."
+			<< "\t\t\t2-Show Payroll."
+			<< "\n 3-Search About Employee."
+			<< "\t\t4-Updata Employee Filed." 
+			<< "\n 5-Delete Employee." 
+			<< "\t\t\t6-Back Up File." 
+			<< "\n 7-Show back Up File."
 			<<"\t\t\t8-Exit.";
 
 		cout << '\n' << '\n' << "Enter your choose:-  ";

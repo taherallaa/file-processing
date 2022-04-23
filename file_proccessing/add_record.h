@@ -28,7 +28,7 @@ void addRecord() {
 	{
 		cout << "----------------------------------" << '\n';
 		cout << "===> Follow instructions blew?! <===\n";
-		cout << "----------------------------------" << '\n';
+		cout << "----------------------------------" << '\n' << '\n';
 		do {
 			//this condition in order to  don't delete above statment in first time and the value will chage in 
 			//the line_74
