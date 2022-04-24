@@ -8,8 +8,8 @@ using namespace std;
 
 // global variable
 
- string namefile;
- bool ch{};
+string namefile;
+bool ch{};
 
 
 #endif 

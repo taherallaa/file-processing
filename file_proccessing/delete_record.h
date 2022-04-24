@@ -71,7 +71,7 @@ void deleteRecord() {
 	Employee emp;
 	ifstream file;
 	ofstream outfile;
-	
+
 	file.open("data.txt", ios::in);
 	outfile.open("temp.txt", ios::out);
 
@@ -81,9 +81,9 @@ void deleteRecord() {
 
 		cout << "Enter id of the record you want to delete it:-   ";
 		cin >> id; //id = 1
-		
+
 		while (!file.eof()) {
-		
+
 			if (id != emp.id) {
 				outfile.write((char *) &emp, sizeof(emp));
 				found = true;

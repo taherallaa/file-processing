@@ -9,14 +9,14 @@
 #include "global_var.h"
 
 
-using namespace std; 
+using namespace std;
 
 //the function blew make in order to make user enable add records that consist of id, name, age, salary
 void addRecord() {
 	system("cls");
 
 	//variable decleration and dircet brace initialization
-	ch = {false};
+	ch = { false };
 	char letter{};
 	Employee emp{};
 	int check__id{};
@@ -42,7 +42,7 @@ void addRecord() {
 
 			//this line blew will read the file first before we go to do do while
 			//to enable us check emp.id
-			readFile.read((char *) &emp, sizeof(emp)); // when function read file id == 1
+			readFile.read((char*)&emp, sizeof(emp)); // when function read file id == 1
 
 			// this do while blew in order to check if id is exist in file or not...
 			do {
@@ -54,7 +54,7 @@ void addRecord() {
 				else {
 					cout << "the id ( " << check__id << " ) is exist, try again!" << '\n';
 					goto again;
-				} 
+				}
 				readFile.read((char*)&emp, sizeof(emp));
 			} while (!file.eof());
 
@@ -69,7 +69,7 @@ void addRecord() {
 
 			//thie line blew in order ot write  record file 
 			file.write((char*)&emp, sizeof(emp));
-			
+
 			cout << '\n' << "-------------------" << '\n';
 			cout << "Do you want to add new record(Y,N)?  ";
 			cin >> letter;

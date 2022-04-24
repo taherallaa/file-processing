@@ -13,7 +13,7 @@ using namespace std;
 //this function for delete all content of the file...
 void deleatAllRecord() {
 
-	
+
 	fstream file("data.txt", ios::in);
 
 	if (file.is_open()) {
@@ -30,7 +30,7 @@ void deleatAllRecord() {
 		else {
 			cout << "file doesn't delete";
 		}
-			
+
 	}
 	else {
 		cout << "the file doesn't found" << '\n';

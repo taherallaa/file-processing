@@ -19,12 +19,12 @@ using namespace std;
 int main() {
 
 	char letter{};
-	int choose{0};
+	int choose{ 0 };
 
 
 	do
 	{
-		
+
 		// change background and font color  of the terminal background will be green(2) and textColor will be black(0)
 		system("color 60");
 
@@ -32,13 +32,13 @@ int main() {
 		system("cls");
 
 		//this condetion depend on the value of ch in the line 91 
-		if (!ch) 
+		if (!ch)
 		{
-			cout << "\n\n\n\n\t\t\tWelcome to you in our payroll program made by "; 
+			cout << "\n\n\n\n\t\t\tWelcome to you in our payroll program made by ";
 
 			printf("%c", '\0' + 3);	printf("%c", '\0' + 3);	// for make emoji
 
-			cout <<" <<taher allaa >> && << salah swidan >> \n\n\t\t\t\t\t\t Press 'Enter' to continue" << '\n';
+			cout << " <<taher allaa >> && << salah swidan >> \n\n\t\t\t\t\t\t Press 'Enter' to continue" << '\n';
 			_getch();
 		}
 
@@ -46,18 +46,18 @@ int main() {
 		cout << "\t\a >>> All Operation on file >>>" << '\n' << '\n';
 		cout << "select your choose\n" << "-------\n" << '\n';
 
-	//thid blew word (taher) for goto in line_86 if the user input choose number it will make user to enter number agein
+		//thid blew word (taher) for goto in line_86 if the user input choose number it will make user to enter number agein
 	taher:
-		
+
 		//the list blew is a order that user will choose from it
 		cout << " 1-Add Employee."
 			<< "\t\t\t2-Show Payroll."
 			<< "\n 3-Search About Employee."
-			<< "\t\t4-Updata Employee Filed." 
-			<< "\n 5-Delete Employee." 
-			<< "\t\t\t6-Back Up File." 
+			<< "\t\t4-Updata Employee Filed."
+			<< "\n 5-Delete Employee."
+			<< "\t\t\t6-Back Up File."
 			<< "\n 7-Show back Up File."
-			<<"\t\t\t8-Exit.";
+			<< "\t\t\t8-Exit.";
 
 		cout << '\n' << '\n' << "Enter your choose:-  ";
 		cin >> choose;

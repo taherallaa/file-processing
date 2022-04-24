@@ -24,7 +24,7 @@ void readRecord() {
 
 		cout << "The records are:- \n-----------" << '\n';
 		cout << "Id\tName\tAge\tSalary" << endl;
-		
+
 		//the while blew in order to check the place of the cursor  and read the content file                                                                
 		while (!file.eof()) {
 

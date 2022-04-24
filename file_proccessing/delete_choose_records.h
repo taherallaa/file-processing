@@ -23,33 +23,33 @@ void delChooseRecrd() {
 	file.open("data.txt", ios::in);
 	outfile.open("temp.txt", ios::out);
 
-if (file.is_open()) {
+	if (file.is_open()) {
 
-	file.read((char*)&emp, sizeof(emp));  //id = 1;
+		file.read((char*)&emp, sizeof(emp));  //id = 1;
 
-	cout << "Enter id of the record you want to delete it:-   ";
-	cin >> id; //id = 1
+		cout << "Enter id of the record you want to delete it:-   ";
+		cin >> id; //id = 1
 
-	while (!file.eof()) {
+		while (!file.eof()) {
 
-		if (id != emp.id) {
-			outfile.write((char *) &emp, sizeof(emp));
-			found = true;
+			if (id != emp.id) {
+				outfile.write((char*)&emp, sizeof(emp));
+				found = true;
+			}
+			file.read((char*)&emp, sizeof(emp));
 		}
-		file.read((char*)&emp, sizeof(emp));
+		if (!found)
+			cout << "Invaild id" << '\n';
+
+
+		file.close();
+		outfile.close();
+
+		outfile.close();
+
+		remove("data.txt");
+		rename("temp.txt", "data.txt");
 	}
-	if (!found)
-		cout << "Invaild id" << '\n';
-
-
-	file.close();
-	outfile.close();
-
-	outfile.close();
-
-	remove("data.txt");
-	rename("temp.txt", "data.txt");
-   }
 }
 
 

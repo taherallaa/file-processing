@@ -13,14 +13,14 @@ using namespace std;
 
 //this function for enable user updata the field of record (name, age, salary)
 void updataAnyRecord() {
-	
+
 	char letter;
 	do {
 		int choose;
 		system("cls");
 
-		taher:
-	
+	taher:
+
 		cout << "Choose any field that want to update it:- \n" << '\n';
 		cout << "1-Updata name.\t\t2-Updata age.\n3-Updata salary.\t4-Exit.\n";
 		cout << '\n' << "Enter your choose:-  ";
@@ -40,10 +40,10 @@ void updataAnyRecord() {
 		case 4:
 			return;
 		default:
-		
+
 			cout << '\n' << '\n' << "Invalid choose try agein" << '\n';
 			cout << "-----------------------\n";
-			
+
 			goto taher;
 			break;
 		}
@@ -53,7 +53,7 @@ void updataAnyRecord() {
 		cout << '\n' << "Do you want to updata anything else(Y,N)?   ";
 		cin >> letter;
 
-		
+
 
 	} while (letter == 'y' || letter == 'Y');
 }
