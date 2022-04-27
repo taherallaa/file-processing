@@ -12,14 +12,16 @@ using namespace std;
 //and we use global variable for pass the new copied_file in the function to read it...
 void copyfile()
 {
+	system("cls");
+
 	char ch{}, letter{};
 	string copyfile;
 
 	do {
-		cout << "Enter the name of the file that want to copy it: " << '\n';
+		cout << '\n' << "Enter the (path + nameFile) or only name  of the file that want to copy it: " << '\n';
 		cin >> copyfile;   //this variable place in globle file
 
-		cout << "Enter the path of the file and its name: " << '\n';
+		cout << "Enter the (path + name ) of copied file: " << '\n';
 		cin >> namefile;  //this variable place in globle file
 
 		ifstream infile(copyfile, ios::in);
