@@ -72,6 +72,7 @@ int main() {
 			addRecord();
 			break;
 		case 2:
+		
 			readRecord();
 			break;
 		case 3:
