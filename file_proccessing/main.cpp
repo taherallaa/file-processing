@@ -1,6 +1,8 @@
-﻿#include <iostream>
+﻿
+#include <iostream>
 #include <conio.h>
 
+//taher allaa
 
 using namespace std;
 
@@ -72,6 +74,7 @@ int main() {
 			addRecord();
 			break;
 		case 2:
+		
 			readRecord();
 			break;
 		case 3:

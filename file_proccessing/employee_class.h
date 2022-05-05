@@ -6,7 +6,7 @@
 class Employee {
 public:
 	int id{}, age{};
-	long float salary{};
+	float salary{};
 	char name[10]{};
 };
 
